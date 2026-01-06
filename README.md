@@ -97,27 +97,35 @@ DTO ↔ Entity conversion using Transformers
 
 ### Booking
 - `POST /booking/book/customer/{customerId}`  
-- `DELETE /booking/delete/{bookingId}` 
+- `DELETE /booking/delete/{bookingId}`  
+
+---
 
 ⚠️ Exception Handling
-Custom exceptions like:
-CustomerNotFoundException
-DriverNotFoundException
-CabNotFoundException
-BookingNotFoundException
+Custom exceptions:
+- CustomerNotFoundException  
+- DriverNotFoundException  
+- CabNotFoundException  
+- BookingNotFoundException  
+
+---
 
 🧪 Testing
-Basic Spring Boot test setup included
-Scope for adding:
-Unit tests (JUnit, Mockito)
-Integration tests
+- Basic Spring Boot test setup included  
+- Scope for adding:
+  - Unit tests (JUnit, Mockito)  
+  - Integration tests  
+
+---
 
 🔐 Configuration
-Sensitive data (DB credentials, email config) should be placed in:
-application.properties
+
+Sensitive data such as database credentials and email configuration are stored in:
+
 ⚠️ This file is intentionally gitignored for security.
 
 🚀 How to Run Locally
+```bash
 git clone git@github.com:Vedangmodi/TripEase.git
 cd tripease
 mvn spring-boot:run
